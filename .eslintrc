@@ -8,6 +8,7 @@
         "jsx-a11y/href-no-hash": "off",
         "class-methods-use-this": "off",
         "import/no-extraneous-dependencies": "off",
+        "comma-dangle": ["error", "only-multiline"],
         "jsx-a11y/anchor-is-valid": ["warn",
         {
             "aspects": ["invalidHref"]
