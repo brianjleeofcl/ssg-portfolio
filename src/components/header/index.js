@@ -2,26 +2,40 @@ import React from 'react';
 
 import './_header.scss';
 
-const Header = () =>
+const Header = ({ prop }) =>
   (<header className="header">
     <div className="container">
       <div className="row">
-        <div className="col-12">
+        <div className="col-lg-8">
           <div className="header-content">
-            <span className="header-logo">
-              Gatsby React Boilerplate
-            </span>
-            <nav className="header-nav">
-              <ul className="header-nav-list">
-                <li className="header-nav-list-item">
-                  <a href="#features">Features</a>
-                </li>
-                <li className="header-nav-list-item">
-                  <a href="#howto">How To</a>
-                </li>
-              </ul>
-            </nav>
+            <h1>
+              Brian Lee
+            </h1>
+            <h2>
+              Software Engineer
+            </h2>
           </div>
+        </div>
+        <div className="col-lg-4">
+          <nav className="header-nav">
+            <ul className="header-nav-list">
+
+              <li className="header-nav-list-item">
+                <a href="/">About</a>
+              </li>
+              <li className="header-nav-list-item">
+                <a href="/works">Works</a>
+              </li>
+            </ul>
+            <ul className="header-nav-list">
+              <li className="header-nav-list-item">
+                <a href="/">About</a>
+              </li>
+              <li className="header-nav-list-item">
+                <a href="/works">Works</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

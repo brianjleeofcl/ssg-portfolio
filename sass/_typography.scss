@@ -1,5 +1,21 @@
-body {
-    font-family: "Helvetica", "Arial", sans-serif;
+h1, h2 {
+    font-family: "Quicksand", "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h4 {
     font-size: 20px;
+}
+
+body {
+    font-family: "Lato", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
     color: $color_text;
 }
