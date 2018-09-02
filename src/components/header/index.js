@@ -2,7 +2,7 @@ import React from 'react';
 
 import './_header.scss';
 
-const Header = ({ prop }) =>
+const Header = () =>
   (<header className="header">
     <div className="container">
       <div className="row">
