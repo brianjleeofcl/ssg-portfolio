@@ -1,17 +1,16 @@
 /* global graphql */
 
 import React from 'react';
-import Features from '../components/features';
-import HowTo from '../components/how-to';
 import ResumeSection from '../components/resume-section';
 
-const IndexPage = props =>
-  (<main>
-    {props.data.allDataJson.edges[0].node.resume.map(section =>
+const IndexPage = ({ data }) => {
+  const resumeData = data.allDataJson.edges.find(edge => !!edge.node.resume);
+
+  return (<main>
+    {resumeData.node.resume.map(section =>
       (<ResumeSection data={section} theme={section % 2 ? 'light' : 'dark'} />))}
-    <Features data={props.data.allDataJson.edges[0].node.features} />
-    <HowTo data={props.data.allDataJson.edges[0].node.howTo} />
   </main>);
+};
 
 export default IndexPage;
 
@@ -26,13 +25,8 @@ export const pageQuery = graphql`
               company
               location
               position
+              description
             }
-          }
-          features {
-            title
-          }
-          howTo {
-            title
           }
         }
       }

@@ -1,8 +1,16 @@
+@import "../../../sass/_settings.scss";
+
 .resume {
+    padding: 20px 0;
+
     &.dark {
-        background-color: gray;
+        background-color: $background_dark;
     }
     &.light {
-        background-color: white;
+        background-color: $background_light;
+    }
+
+    .position {
+        margin-right: 10px;
     }
 }

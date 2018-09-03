@@ -1,18 +1,4 @@
 {
-    "resume": [{
-        "section": "experience",
-        "items": [
-            {
-                "company": "Example Company",
-                "location": "Example, AA",
-                "position": "Example Position",
-                "description": [
-                    "Example work",
-                    "Example work"
-                ]
-            }
-        ]
-    }],
     "features": [
         {
             "title": "Basic configuration and folder structure"

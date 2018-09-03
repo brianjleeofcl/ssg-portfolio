@@ -4,16 +4,21 @@ import './_resume-section.scss';
 
 const ResumeSection = ({ data, theme }) =>
   (<section className={`${theme} resume`}>
-    <h2>{data.section}</h2>
-    <ul>
+    <div className="container">
+      <h2>{data.section}</h2>
       {data.items.map((item, i) =>
-        (<li key={i}>
-          <div>
-            <h4 className="serif-accent">{item.company}</h4>
-            <span>{item.location}</span>
+        (<div className="col" key={i}>
+          <div className="row">
+            <h4 className="position">{`${item.position}: `}</h4>
+            <h4 className="serif-accent">
+              {`${item.company} – ${item.location}`}
+            </h4>
           </div>
-        </li>))}
-    </ul>
+          <ul>
+            {item.description.map(detail => (<li>{detail}</li>))}
+          </ul>
+        </div>))}
+    </div>
   </section>);
 
 export default ResumeSection;
