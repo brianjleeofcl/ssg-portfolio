@@ -33,7 +33,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Lato', 'Quicksand', 'Crimson Text:600']
+          families: ['Crimson Text:600']
         }
       }
     }
