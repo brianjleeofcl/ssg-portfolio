@@ -1,6 +1,11 @@
 const pixrem = require('pixrem');
 const autoprefixer = require('autoprefixer');
 
+const activeEnv = process.env.ACTIVE_ENV || 'development';
+require('dotenv').config({
+  path: `.env.${activeEnv}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Brian Lee`,
@@ -40,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-source-medium`,
       options: {
-        username: `@brianjleeofcl`,
+        username: process.env.MEDIUM_USER,
       },
     }
   ],
