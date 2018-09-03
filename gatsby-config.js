@@ -36,7 +36,12 @@ module.exports = {
           families: ['Crimson Text:600']
         }
       }
+    },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@brianjleeofcl`,
+      },
     }
-
   ],
 }

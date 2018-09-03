@@ -14,6 +14,7 @@
   "author": "Prototype Interactive",
   "license": "MIT",
   "dependencies": {
+    "gatsby-source-medium": "^1.0.14",
     "helmet": "^3.10.0",
     "typeface-cooper-hewitt": "0.0.44"
   },
