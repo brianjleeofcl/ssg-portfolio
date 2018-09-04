@@ -5,13 +5,13 @@ import './_header.scss';
 const Header = () =>
   (<header className="header">
     <div className="container">
-      <div className="row">
-        <div className="col-lg-8">
-          <div className="header-content">
-            <h1>
+      <div className="row no-gutters">
+        <div className="col-lg-8-auto">
+          <div className="row header-content">
+            <h1 className="col-auto">
               Brian Lee
             </h1>
-            <h2>
+            <h2 className="col-auto">
               Software Engineer
             </h2>
           </div>
