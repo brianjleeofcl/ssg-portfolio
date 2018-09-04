@@ -3,7 +3,7 @@
 # Gatsby
 .cache/
 public/
-data/*.json
+src/data/*.json
 
 ### Node ###
 
