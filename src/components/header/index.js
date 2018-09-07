@@ -6,7 +6,7 @@ const Header = ({ links }) =>
   (<header className="header">
     <div className="container">
       <div className="row no-gutters">
-        <div className="col-lg-8-auto">
+        <div className="col-lg-8">
           <div className="row header-content">
             <h1 className="col-auto">
               Brian Lee

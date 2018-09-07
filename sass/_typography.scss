@@ -5,6 +5,10 @@ h1, h2 {
     font-weight: 500;
 }
 
+h1, h2, h4 {
+    color: $black;
+}
+
 h1 {
     font-size: 56px;
 }
@@ -19,6 +23,9 @@ h4 {
 
 a {
     color: $color_text_active;
+    &:hover {
+        color: $color_light_text;
+    }
 }
 
 .serif-accent {
@@ -30,5 +37,5 @@ body {
     font-family: "Cooper Hewitt", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: $color_text;
+    color: $color_dark_text;
 }
