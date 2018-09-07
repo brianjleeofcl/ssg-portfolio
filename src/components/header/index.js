@@ -2,7 +2,7 @@ import React from 'react';
 
 import './_header.scss';
 
-const Header = () =>
+const Header = ({ links }) =>
   (<header className="header">
     <div className="container">
       <div className="row no-gutters">
@@ -12,20 +12,19 @@ const Header = () =>
               Brian Lee
             </h1>
             <h2 className="col-auto">
-              Software Engineer
+              Software Engineer – Seattle
             </h2>
           </div>
         </div>
         <div className="col-lg-4">
           <nav className="header-nav">
             <ul className="header-nav-list">
-
-              <li className="header-nav-list-item">
-                <a href="/">About</a>
-              </li>
-              <li className="header-nav-list-item">
-                <a href="/works">Works</a>
-              </li>
+              {links.map(link =>
+                (<li className="header-nav-list-item">
+                  <a href={link.url} target="_blank">
+                    <i className={`icon-${link.icon}`} />
+                  </a>
+                </li>))}
             </ul>
             <ul className="header-nav-list">
               <li className="header-nav-list-item">
