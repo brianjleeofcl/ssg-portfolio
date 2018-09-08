@@ -1,3 +1,5 @@
+@import "../../../sass/_settings.scss";
+
 .header {
     width: 100%;
     margin: 30px 0 20px;
@@ -8,6 +10,12 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+        .gray {
+            color: $color_lightest_text;
+        }
+        .black {
+            color: $black;
+        }
     }
     &-nav-list {
         margin: 0;

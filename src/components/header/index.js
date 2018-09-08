@@ -11,9 +11,10 @@ const Header = ({ links }) =>
             <h1 className="col-auto">
               Brian Lee
             </h1>
-            <h2 className="col-auto">
-              Software Engineer – Seattle
-            </h2>
+            <div className="col">
+              <h2>Software Engineer</h2>
+              <h4 className="gray">Phoenix >> Seoul >> New Jersey >> Chicago >> <span className="black">Seattle</span> >></h4>
+            </div>
           </div>
         </div>
         <div className="col-lg-4">
