@@ -1,14 +1,16 @@
 /* global graphql */
 
 import React from 'react';
+import HeroSection from '../components/hero-section';
 import ResumeSection from '../components/resume-section';
 
 const IndexPage = ({ data }) => {
   const resumeData = data.allDataJson.edges.find(edge => !!edge.node.resume);
 
   return (<main>
-    {resumeData.node.resume.map(section =>
-      (<ResumeSection data={section} theme={section % 2 ? 'light' : 'dark'} />))}
+    <HeroSection />
+    {resumeData.node.resume.map((section, i) =>
+      (<ResumeSection data={section} theme={i % 2 ? 'dark' : 'light'} />))}
   </main>);
 };
 

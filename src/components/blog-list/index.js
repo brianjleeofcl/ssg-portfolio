@@ -14,22 +14,23 @@ const BlogList = ({ data }) => (
           >{children}</a>);
 
         return (
-          <div key={post.uniqueSlug} className="post">
+          <article key={post.uniqueSlug} className="post">
             {post.virtuals.previewImage.imageId
-              ? <img
-                src={`https://miro.medium.com/max/200/${post.virtuals.previewImage.imageId}`}
-                alt={post.title}
-              />
+              ? <MediumLink>
+                <img
+                  src={`https://miro.medium.com/max/200/${post.virtuals.previewImage.imageId}`}
+                  alt={post.title}
+                />
+              </MediumLink>
               : null}
             <div className="text">
               <MediumLink>
                 <h6>{post.title}</h6>
               </MediumLink>
-              <MediumLink>
-                <p>{post.virtuals.subtitle}</p>
-              </MediumLink>
+              <p>{post.virtuals.subtitle}</p>
+              <time>{post.createdAt}</time>
             </div>
-          </div>);
+          </article>);
       })}
     </div>
   </section>
