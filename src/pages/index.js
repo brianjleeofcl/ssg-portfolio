@@ -28,6 +28,8 @@ export const pageQuery = graphql`
               location
               position
               description
+              startDate
+              endDate
             }
           }
         }

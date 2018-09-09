@@ -8,10 +8,8 @@ const Header = ({ links }) =>
       <div className="row no-gutters align-items-end">
         <div className="col-lg-8">
           <div className="row header-content">
-            <h1 className="col-auto">
-              Brian Lee
-            </h1>
             <div className="col">
+              <h1>Brian Lee</h1>
               <h2>Software Engineer</h2>
               <h4 className="gray">Phoenix >> Seoul >> New Jersey >> Chicago >> <span className="black">Seattle</span> >></h4>
             </div>
