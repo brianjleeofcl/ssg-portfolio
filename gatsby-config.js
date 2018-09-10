@@ -14,6 +14,9 @@ module.exports = {
     `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-screenshot`,
+    `gatsby-transformer-yaml`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `svgo`,
     {
       resolve: `gatsby-plugin-postcss-sass`,

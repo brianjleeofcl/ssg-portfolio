@@ -14,7 +14,9 @@
   "author": "Prototype Interactive",
   "license": "MIT",
   "dependencies": {
+    "gatsby-plugin-sharp": "^1.6.48",
     "gatsby-source-medium": "^1.0.14",
+    "gatsby-transformer-sharp": "^1.6.27",
     "helmet": "^3.10.0",
     "typeface-cooper-hewitt": "0.0.44"
   },
@@ -37,6 +39,7 @@
     "gatsby-source-filesystem": "^1.5.16",
     "gatsby-transformer-json": "^1.0.14",
     "gatsby-transformer-screenshot": "^1.0.7",
+    "gatsby-transformer-yaml": "^1.5.18",
     "pixrem": "^4.0.1",
     "svg-sprite-loader": "^3.6.2"
   },
