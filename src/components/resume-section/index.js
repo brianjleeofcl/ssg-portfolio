@@ -6,13 +6,11 @@ const ResumeSection = ({ data, theme }) =>
   (<section className={`${theme} resume`}>
     <div className="container">
       <h2>{data.section}</h2>
-      {data.items.map(item => {
-        console.log(item)
-
-        return (<div className="col" key={item.start}>
+      {data.items.map(item =>
+        (<div className="col" key={item.start}>
           <div className="row">
             <h4 className="position">{`${item.position}: `}</h4>
-            <h4 className="serif-accent">
+            <h4>
               {`${item.company} – ${item.location}`}
             </h4>
           </div>
@@ -26,8 +24,7 @@ const ResumeSection = ({ data, theme }) =>
             }
           </ul>
         </div>)
-      })}
-
+      )}
     </div>
   </section>);
 
