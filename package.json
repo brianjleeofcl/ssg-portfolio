@@ -1,8 +1,7 @@
 {
-  "name": "ssg",
+  "name": "ssg-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "portfolio rewrite, Sept.2018",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -11,7 +10,7 @@
     "lint": "node_modules/.bin/eslint src --fix",
     "dev": "gatsby develop"
   },
-  "author": "Prototype Interactive",
+  "author": "Brian Lee",
   "license": "MIT",
   "dependencies": {
     "gatsby-plugin-sharp": "^1.6.48",
@@ -31,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "gatsby": "^1.9.178",
+    "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.36",
     "gatsby-plugin-postcss-sass": "^1.0.22",
     "gatsby-plugin-react-helmet": "^1.0.8",
@@ -42,13 +42,5 @@
     "gatsby-transformer-yaml": "^1.5.18",
     "pixrem": "^4.0.1",
     "svg-sprite-loader": "^3.6.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PrototypeInteractive/gatsby-react-boilerplate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/PrototypeInteractive/gatsby-react-boilerplate/issues"
-  },
-  "homepage": "https://github.com/PrototypeInteractive/gatsby-react-boilerplate#readme"
+  }
 }
