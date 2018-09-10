@@ -3,7 +3,8 @@
 # Gatsby
 .cache/
 public/
-src/data/*.json
+src/data/*
+!*/.gitkeep
 
 ### Node ###
 

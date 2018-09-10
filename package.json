@@ -36,6 +36,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^1.5.16",
     "gatsby-transformer-json": "^1.0.14",
+    "gatsby-transformer-screenshot": "^1.0.7",
     "pixrem": "^4.0.1",
     "svg-sprite-loader": "^3.6.2"
   },
