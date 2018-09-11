@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 import './_header.scss';
 
@@ -32,13 +33,13 @@ const Header = ({ links }) =>
         <nav className="header-nav">
           <ul className="header-nav-list">
             <li className="header-nav-list-item">
-              <a href="/">About</a>
+              <Link to="/">About</Link>
             </li>
             <li className="header-nav-list-item">
-              <a href="/works">Works</a>
+              <Link to="/works">Works</Link>
             </li>
             <li className="header-nav-list-item">
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
