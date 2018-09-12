@@ -24,9 +24,9 @@ const BlogList = ({ data }) => (
               </MediumLink>
               : null}
             <div className="text">
-              <MediumLink>
-                <h6>{post.title}</h6>
-              </MediumLink>
+              <h6>
+                <MediumLink>{post.title}</MediumLink>
+              </h6>
               <p>{post.virtuals.subtitle}</p>
               <time>{post.createdAt}</time>
             </div>
