@@ -17,6 +17,8 @@
     "gatsby-source-medium": "^1.0.14",
     "gatsby-transformer-sharp": "^1.6.27",
     "helmet": "^3.10.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "typeface-cooper-hewitt": "0.0.44"
   },
   "devDependencies": {
