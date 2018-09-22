@@ -13,7 +13,6 @@ module.exports = {
     `gatsby-transformer-yaml`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `svgo`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
