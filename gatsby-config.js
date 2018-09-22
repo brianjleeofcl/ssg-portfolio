@@ -11,7 +11,6 @@ module.exports = {
     title: `Brian Lee`,
   },
   plugins: [
-    `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-screenshot`,
     `gatsby-transformer-yaml`,
