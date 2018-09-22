@@ -18,18 +18,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `svgo`,
-    {
-      resolve: `gatsby-plugin-postcss-sass`,
-      options: {
-        postCssPlugins: [
-          pixrem(),
-          autoprefixer({
-            browsers: ['last 2 versions']
-          })
-        ],
-        precision: 8
-      }
-    },
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
