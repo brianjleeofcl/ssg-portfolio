@@ -15,7 +15,7 @@ const ResumeSection = ({ data, theme }) =>
             </h4>
           </div>
           <div>
-            <time>{`${item.startDate}${item.endDate ? ` – ${item.endDate}` : ''}`}</time>
+            <h6>{`${item.startDate}${item.endDate ? ` – ${item.endDate}` : ''}`}</h6>
           </div>
           <ul>
             {item.description
