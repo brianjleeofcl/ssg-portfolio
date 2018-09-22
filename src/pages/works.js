@@ -1,11 +1,14 @@
 /* global graphql */
 import React from 'react';
 import BlogList from '../components/blog-list';
+import TemplateWrapper from '../components/layout';
 
 const WorksPage = ({ data }) => (
-  <main>
-    <BlogList data={data.allMediumPost.edges.map(({ node }) => node)} />
-  </main>);
+  <TemplateWrapper>
+    <main>
+      <BlogList data={data.allMediumPost.edges.map(({ node }) => node)} />
+    </main>
+  </TemplateWrapper>);
 
 export default WorksPage;
 

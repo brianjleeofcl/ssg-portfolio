@@ -1,6 +1,3 @@
-const pixrem = require('pixrem');
-const autoprefixer = require('autoprefixer');
-
 const activeEnv = process.env.ACTIVE_ENV || 'development';
 require('dotenv').config({
   path: `.env.${activeEnv}`,
