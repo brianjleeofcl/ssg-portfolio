@@ -10,7 +10,7 @@ const ExternalLink = ({ children, url }) => (
 const ProjectList = ({ data }) => (
   <section className="project-list">
     <div className="container">
-      <h2>Personal Projects</h2>
+      <h3>Personal Projects</h3>
       {data.map(project =>
         (<article key={project.name} className="post">
           {project.virtuals

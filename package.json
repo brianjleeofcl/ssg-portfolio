@@ -20,6 +20,7 @@
     "gatsby-plugin-sass": "2.0.1",
     "gatsby-plugin-sharp": "2.0.5",
     "gatsby-source-medium": "2.0.0",
+    "gatsby-transformer-remark": "^2.1.3",
     "gatsby-transformer-sharp": "2.1.1",
     "helmet": "3.13.0",
     "node-sass": "4.9.3",

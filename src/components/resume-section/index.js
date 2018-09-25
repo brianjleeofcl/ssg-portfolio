@@ -5,7 +5,7 @@ import './_resume-section.scss';
 const ResumeSection = ({ data, theme }) =>
   (<section className={`${theme} resume`}>
     <div className="container">
-      <h2>{data.section}</h2>
+      <h3>{data.section}</h3>
       {data.items.map(item =>
         (<div className="col" key={item.start}>
           <div className="row">
@@ -19,7 +19,7 @@ const ResumeSection = ({ data, theme }) =>
           </div>
           <ul>
             {item.description
-              ? item.description.map(detail => (<li>{detail}</li>))
+              ? item.description.map((detail, i) => (<li key={`${item.position}-${i}`}>{detail}</li>))
               : null
             }
           </ul>
