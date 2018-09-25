@@ -1,11 +1,11 @@
 @import "../node_modules/typeface-cooper-hewitt/index.css";
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Cooper Hewitt", "Helvetica", "Arial", sans-serif;
     font-weight: 600;
 }
 
-h1, h2, h4, h6 {
+h1, h2, h3, h4, h6 {
     color: $black;
 }
 
@@ -14,6 +14,10 @@ h1 {
 }
 
 h2 {
+    font-size: 32px;
+}
+
+h3 {
     font-size: 24px;
 }
 
