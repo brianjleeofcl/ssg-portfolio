@@ -1,6 +1,5 @@
-/* global graphql */
-
 import React from 'react';
+import { graphql } from 'gatsby';
 import HeroSection from '../components/hero-section';
 import ResumeSection from '../components/resume-section';
 import ProjectList from '../components/project-list';

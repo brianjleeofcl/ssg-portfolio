@@ -1,5 +1,5 @@
-/* global graphql */
 import React from 'react';
+import { graphql } from 'gatsby';
 import BlogList from '../components/blog-list';
 import TemplateWrapper from '../components/layout';
 
