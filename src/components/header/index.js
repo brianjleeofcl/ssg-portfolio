@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import './_header.scss';
 
-const Header = ({ links }) =>
+const Header = ({ links, siteStructure }) =>
   (<header className="header">
     <div className="container">
       <div className="row no-gutters align-items-end">
@@ -31,17 +31,12 @@ const Header = ({ links }) =>
       </div>
       <div className="row no-gutters justify-content-end">
         <nav className="header-nav">
-          <ul className="header-nav-list">
-            <li className="header-nav-list-item">
-              <Link to="/">About</Link>
-            </li>
-            <li className="header-nav-list-item">
-              <Link to="/works">Works</Link>
-            </li>
-            <li className="header-nav-list-item">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
+          <ul className="header-nav-list">{
+            siteStructure.map(({ relPath, label }) =>
+              (<li className="header-nav-list-item">
+                <Link to={relPath}>{label}</Link>
+              </li>))
+          }</ul>
         </nav>
       </div>
     </div>

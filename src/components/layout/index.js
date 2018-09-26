@@ -17,18 +17,23 @@ const TemplateWrapper = ({ children }) => (<StaticQuery
               url
               icon
             }
+            siteStructure {
+              relPath
+              label
+            }
           }
         }
       }
     }
   `}
   render={(data) => {
-    const links = data.allDataJson.edges.find(edge => !!edge.node.links);
+    const links = data.allDataJson.edges.find(edge => Boolean(edge.node.links));
+    const siteStructure = data.allDataJson.edges.find(edge => Boolean(edge.node.siteStructure));
     return (<div>
       <Helmet
         title="Brian Lee"
       />
-      <Header links={links.node.links} />
+      <Header links={links.node.links} siteStructure={siteStructure} />
       {children}
       <Footer />
     </div>);
