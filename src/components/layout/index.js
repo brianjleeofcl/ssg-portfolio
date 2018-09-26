@@ -33,7 +33,7 @@ const TemplateWrapper = ({ children }) => (<StaticQuery
       <Helmet
         title="Brian Lee"
       />
-      <Header links={links.node.links} siteStructure={siteStructure} />
+      <Header links={links.node.links} siteStructure={siteStructure.node.siteStructure} />
       {children}
       <Footer />
     </div>);

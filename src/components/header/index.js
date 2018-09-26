@@ -24,19 +24,21 @@ const Header = ({ links, siteStructure }) =>
                   <a href={link.url} target="_blank">
                     <i className={`icon-${link.icon}`} />
                   </a>
-                </li>))}
+                </li>)
+              )}
             </ul>
           </nav>
         </div>
       </div>
       <div className="row no-gutters justify-content-end">
         <nav className="header-nav">
-          <ul className="header-nav-list">{
-            siteStructure.map(({ relPath, label }) =>
+          <ul className="header-nav-list">
+            {siteStructure.map(({ relPath, label }) =>
               (<li className="header-nav-list-item">
                 <Link to={relPath}>{label}</Link>
-              </li>))
-          }</ul>
+              </li>)
+            )}
+          </ul>
         </nav>
       </div>
     </div>
