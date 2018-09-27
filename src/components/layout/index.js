@@ -35,7 +35,7 @@ const TemplateWrapper = ({ children }) => (<StaticQuery
       />
       <Header links={links.node.links} siteStructure={siteStructure.node.siteStructure} />
       {children}
-      <Footer siteStructure={siteStructure.node.siteStructure} />
+      <Footer links={links.node.links} siteStructure={siteStructure.node.siteStructure} />
     </div>);
   }}
 />);

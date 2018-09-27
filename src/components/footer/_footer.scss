@@ -23,4 +23,14 @@
             margin-right: 0;
         }
     }
+
+    ul {
+        padding-left: 0;
+    }
+    li {
+        * {
+            color: $color-light-text !important;
+        }
+        list-style: none;
+    }
 }
