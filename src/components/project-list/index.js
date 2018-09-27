@@ -12,7 +12,7 @@ const ProjectList = ({ data }) => (
     <div className="container">
       <h3>Personal Projects</h3>
       {data.map(project =>
-        (<article key={project.name} className="post">
+        (<article key={project.name} className="project">
           {project.virtuals
             ? <ExternalLink>
               <img
@@ -22,12 +22,19 @@ const ProjectList = ({ data }) => (
             </ExternalLink>
             : null}
           <div className="text">
-            <h6>
-              <ExternalLink url={project.url}>
-                {project.name}
+            <div className="project-heading">
+              <h4>
+                <ExternalLink url={project.url}>
+                  {project.name}
+                </ExternalLink>
+              </h4>
+              <ExternalLink url={project.repository}>
+                <i className="icon-github-circled" /> GitHub
               </ExternalLink>
-            </h6>
-            <p>{project.description}</p>
+            </div>
+            <h6>{project.description}</h6>
+            <p>Language: {project.language}</p>
+            <p>Tech: {project.keyTech}</p>
             <time>{project.date}</time>
           </div>
         </article>))
