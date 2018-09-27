@@ -5,7 +5,10 @@ import './_blog-list.scss';
 const BlogList = ({ data }) => (
   <section className="blog-list">
     <div className="container">
-      <h2>Technical Writing</h2>
+      <div className="heading-spacing">
+        <h3>Technical Writing</h3>
+        <h4><a href={`https://medium.com/${process.env.MEDIUM_USER}`} target="_blank">(view on Medium.com)</a></h4>
+      </div>
       {data.map((post) => {
         const MediumLink = ({ children }) => (
           <a

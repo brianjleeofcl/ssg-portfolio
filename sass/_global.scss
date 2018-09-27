@@ -21,6 +21,14 @@ section {
     padding: 25px 0;
 }
 
+.heading-spacing {
+    display: flex;
+    align-items: baseline;
+    & > * {
+        margin-right: 20px;
+    }
+}
+
 .visually-hidden {
     position: absolute;
     overflow: hidden;

@@ -22,7 +22,7 @@ const ProjectList = ({ data }) => (
             </ExternalLink>
             : null}
           <div className="text">
-            <div className="project-heading">
+            <div className="heading-spacing">
               <h4>
                 <ExternalLink url={project.url}>
                   {project.name}
