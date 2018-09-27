@@ -23,13 +23,16 @@
             margin-right: 0;
         }
     }
+    h6 {
+        color: $color-lighter-text;
+    }
 
     ul {
         padding-left: 0;
     }
     li {
         * {
-            color: $color-light-text !important;
+            color: $color-light-text;
         }
         list-style: none;
     }
